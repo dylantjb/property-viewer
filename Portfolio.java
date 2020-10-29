@@ -12,39 +12,38 @@ import java.util.List;
  * A portfolio is a collection of properties. It reads properties from a file on disk,
  * and it can be used to retrieve single properties.
  * <p>
- * The file name to read from is passed in at construction.
+ * The file name to read from is passed in at construction. Student name: Dylan Barker, K-number: 20001430.
  *
  * @author Michael Kölling and Josh Murphy
- * @version 1.0
- * Student name: Dylan Baker
- * K-number: 20001430
+ * @version 2.0
  */
 public class Portfolio {
     private final List<Property> properties;
 
     /**
-     * Constructor for objects of class Portfolio
+     * Constructor for objects of class Portfolio.
      */
     public Portfolio() {
         properties = loadProperties();
     }
 
     /**
-     * Return a property from this Portfolio.
+     * @param propertyNumber The index of the property in the portfolio.
+     * @return a property from this Portfolio.
      */
     public Property getProperty(int propertyNumber) {
         return properties.get(propertyNumber);
     }
 
     /**
-     * Return the number of Properties in this Portfolio.
+     * @return the number of Properties in this Portfolio.
      */
     public int numberOfProperties() {
         return properties.size();
     }
 
     /**
-     * Return an ArrayList containing the rows in the AirBnB London data set csv file.
+     * @return an ArrayList containing the rows in the AirBnB London data set csv file.
      */
     public List<Property> loadProperties() {
         System.out.print("Begin loading Airbnb london dataset...");
@@ -80,9 +79,9 @@ public class Portfolio {
     }
 
     /**
-     * @param doubleString the string to be converted to Double type
+     * @param doubleString the string to be converted to Double type.
      * @return the Double value of the string, or -1.0 if the string is
-     * either empty or just whitespace
+     * either empty or just whitespace.
      */
     private Double convertDouble(String doubleString) {
         if (doubleString != null && !doubleString.trim().equals("")) {
@@ -92,9 +91,9 @@ public class Portfolio {
     }
 
     /**
-     * @param intString the string to be converted to Integer type
+     * @param intString the string to be converted to Integer type.
      * @return the Integer value of the string, or -1 if the string is
-     * either empty or just whitespace
+     * either empty or just whitespace.
      */
     private Integer convertInt(String intString) {
         if (intString != null && !intString.trim().equals("")) {

@@ -1,10 +1,10 @@
 /**
  * Property is a class that defines a property for display.
+ * <p>
+ * Student name: Dylan Barker, K-number: 20001430.
  *
  * @author Michael Kölling and Josh Murphy
  * @version 2.0
- * Student name: Dylan Baker
- * K-number: 20001430
  */
 public class Property {
     private final String id;
@@ -27,9 +27,9 @@ public class Property {
      * @param neighbourhood general area of the property
      * @param latitude      geographical y coordinate of property
      * @param longitude     geographical x coordinate of property
-     * @param roomType      indicates the size of the room
+     * @param roomType      indicates the type of room: entire property or a private room
      * @param price         price of staying the minimum nights
-     * @param minimumNights required amount of nights in order to book
+     * @param minimumNights required amount of nights in order to book.
      */
     public Property(String id, String hostID, String hostName, String neighbourhood, double latitude, double longitude,
                     String roomType, int price, int minimumNights) {
@@ -47,6 +47,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the ID to display on GUI.
+     *
      * @return the ID of this property.
      */
     public String getID() {
@@ -54,6 +56,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the host's ID to display on GUI.
+     *
      * @return the hostID of this property.
      */
     public String getHostID() {
@@ -61,6 +65,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the latitude to display on GUI.
+     *
      * @return the latitude of this property.
      */
     public double getLatitude() {
@@ -68,6 +74,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the longitude to display on GUI.
+     *
      * @return the longitude of this property.
      */
     public double getLongitude() {
@@ -75,6 +83,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the price to display on GUI.
+     *
      * @return the price of this property.
      */
     public int getPrice() {
@@ -82,6 +92,8 @@ public class Property {
     }
 
     /**
+     * Checks if the property is a favourite and displays on GUI.
+     *
      * @return true if this property is currently marked as a favourite, false otherwise.
      */
     public boolean isFavourite() {
@@ -89,6 +101,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the price to display on GUI.
+     *
      * @return the host name of this property.
      */
     public String getHostName() {
@@ -96,6 +110,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the general area to display on GUI.
+     *
      * @return the neighbourhood of this property.
      */
     public String getNeighbourhood() {
@@ -103,6 +119,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the room type to display on GUI.
+     *
      * @return the room type of this property.
      */
     public String getRoomType() {
@@ -110,6 +128,8 @@ public class Property {
     }
 
     /**
+     * Accessed to retrieve the minimum number of nights to book and displays on GUI.
+     *
      * @return the minimum number of nights this property can be booked for.
      */
     public String getMinNights() {

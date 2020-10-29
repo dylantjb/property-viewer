@@ -6,11 +6,11 @@ import java.awt.*;
 /**
  * PropertyViewerGUI provides the GUI for the project. It displays the property
  * and strings, and it listens to button clicks.
+ * <p>
+ * Student name: Dylan Barker, K-number: 20001430.
  *
- * @author Michael Kölling, David J Barnes, and Josh Murphy
- * @version 3.0
- * Student name: Dylan Baker
- * K-number: 20001430
+ * @author Michael Kölling and Josh Murphy
+ * @version 2.0
  */
 public class PropertyViewerGUI {
     private final PropertyViewer viewer;
@@ -28,6 +28,8 @@ public class PropertyViewerGUI {
 
     /**
      * Create a PropertyViewer and display its GUI on screen.
+     *
+     * @param viewer The base property viewer for the application.
      */
     public PropertyViewerGUI(PropertyViewer viewer) {
         this.viewer = viewer;
@@ -41,7 +43,7 @@ public class PropertyViewerGUI {
     /**
      * Displays a given property.
      *
-     * @param property The property to be displayed
+     * @param property The property to be displayed.
      */
     public void showProperty(Property property) {
         hostIDLabel.setText(property.getHostID());
@@ -57,6 +59,9 @@ public class PropertyViewerGUI {
     /**
      * Set a fixed size for the property display. If set, this size will be used for all properties.
      * If not set, the GUI will resize for each property.
+     *
+     * @param width  The selected width for the property panel
+     * @param height The selected height for the property panel.
      */
     public void setPropertyViewSize(int width, int height) {
         propertyPanel.setPreferredSize(new Dimension(width, height));
@@ -65,6 +70,8 @@ public class PropertyViewerGUI {
 
     /**
      * Show a message in the status bar at the bottom of the screen.
+     *
+     * @param property The currently displayed property.
      */
     public void showFavourite(Property property) {
         String favouriteText = " ";
@@ -76,6 +83,8 @@ public class PropertyViewerGUI {
 
     /**
      * Show the ID in the top of the screen.
+     *
+     * @param property The currently displayed property.
      */
     public void showID(Property property) {
         idLabel.setText("Current Property ID:" + property.getID());

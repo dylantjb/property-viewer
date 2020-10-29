@@ -4,11 +4,11 @@ import java.util.ArrayList;
 /**
  * This project implements a simple application. Properties from a fixed
  * file can be displayed.
+ * <p>
+ * Student name: Dylan Barker, K-number: 20001430.
  *
  * @author Michael Kölling and Josh Murphy
- * @version 1.0
- * Student name: Dylan Baker
- * K-number: 20001430
+ * @version 2.0
  */
 public class PropertyViewer {
     private final PropertyViewerGUI gui;           // the Graphical User Interface
@@ -21,12 +21,13 @@ public class PropertyViewer {
 
     /**
      * Creates a PropertyViewer and displays the first property in its GUI.
-     * Creates arraylist for prices of viewed properties.
      */
     public PropertyViewer() {
         gui = new PropertyViewerGUI(this);
         portfolio = new Portfolio();
         portfolioSize = portfolio.numberOfProperties();
+
+        // collects property prices for the challenge method
         propertyPrices = new ArrayList<>();
 
         currentPropertyIndex = -1;
@@ -34,7 +35,7 @@ public class PropertyViewer {
     }
 
     /**
-     * Checks if next property index is within bounds and displays it.
+     * Checks if next property index is within bounds and displays in its GUI.
      */
     public void nextProperty() {
         if (++currentPropertyIndex > portfolioSize - 1)
@@ -43,7 +44,7 @@ public class PropertyViewer {
     }
 
     /**
-     * Checks if previous property index is within bounds and displays it.
+     * Checks if previous property index is within bounds and displays in its GUI.
      */
     public void previousProperty() {
         if (--currentPropertyIndex < 0)
@@ -67,7 +68,7 @@ public class PropertyViewer {
     }
 
     /**
-     * Toggles if the property is a favourite and shows it in GUI.
+     * Toggles the property favourite status and shows it in its GUI.
      */
     public void toggleFavourite() {
         currentProperty.toggleFavourite();
@@ -81,7 +82,7 @@ public class PropertyViewer {
      * This method opens the system's default internet browser.
      * The Google maps page should show the current properties location on the map.
      *
-     * @throws Exception if the default browser is not found or inaccessible
+     * @throws Exception if the default browser is not found or inaccessible.
      */
     public void viewMap() throws Exception {
 
@@ -93,7 +94,9 @@ public class PropertyViewer {
     }
 
     /**
-     * @return how many properties are viewed
+     * Accessed to display how many property views there are which is displayed in a new window.
+     *
+     * @return how many properties are viewed.
      */
     public int getNumberOfPropertiesViewed() {
         return views;
@@ -101,7 +104,9 @@ public class PropertyViewer {
 
 
     /**
-     * @return the average price of the properties viewed
+     * Calculates the average price of the properties viewed so far which is displayed in new window.
+     *
+     * @return the mean price.
      */
     public int averagePropertyPrice() {
         int sum = 0;
