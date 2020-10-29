@@ -1,23 +1,21 @@
 BlueJ project "property viewer"
 
-Authors: Michael Kölling and Josh Murphy
-Student name: Dylan Barker
-K-number: 20001430
+The project shows property listing details from an imported portfolio via CSV file.
 
-Summary of the project
-=======================
-The project shows property listings within an imported portfolio by a CSV file. 
-The Graphical interface displays its details as well as its location within 
-your web browser via google maps.
+Authors: Michael Kölling and Josh Murphy
+
+Student name: Dylan Barker
+
+K-number: 20001430
 
 Purpose of the project
 =======================
 The project intends to give the user a friendly interface to browse the portfolio, 
-mark properties as favourites and show some useful information 
-as well as the average price of the viewed properties.
+mark properties as favourites and show some useful information such as the amount 
+of viewed properties and the average price of the viewed properties.
 
 How to use the project
 =======================
-You can run the project by creating a PropertyViewer object within a Main class
-or via BlueJ's interface after compilation. All labelled buttons perform upon a click. 
+You can run the project by creating a PropertyViewer object within a Main class or
+via BlueJ's interface after compilation. All labelled buttons perform upon a click. 
 Click the red 'x' button to close and finish.
