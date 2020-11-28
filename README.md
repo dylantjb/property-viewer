@@ -2,11 +2,7 @@ BlueJ project "property viewer"
 
 The project shows property listing details from an imported portfolio via CSV file.
 
-Authors: Michael Kölling and Josh Murphy
-
-Student name: Dylan Barker
-
-K-number: 20001430
+Authors: Michael Kölling and Josh Murphy, edited by Dylan Barker (k20001430).
 
 Purpose of the project
 =======================
